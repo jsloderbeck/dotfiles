@@ -32,12 +32,13 @@
     # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
-        [ pkgs.vscodium
+        [ pkgs.vscode
 	  pkgs.mkalias
 	  pkgs.bitwarden-desktop
 	  pkgs.neovim
 	  pkgs.spotify
           pkgs.git
+	  pkgs.obsidian
 	];
 
       homebrew = {
@@ -50,6 +51,7 @@
 	];
 	casks = [
 	  "firefox"
+	  "zen"
 #	  "sketchybar"
 	];
 	masApps = {
