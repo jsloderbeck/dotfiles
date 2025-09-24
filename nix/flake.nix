@@ -39,6 +39,8 @@
 	  pkgs.spotify
           pkgs.git
 	  pkgs.obsidian
+	  pkgs.ripgrep
+	  pkgs.postgresql
 	];
 
       homebrew = {
@@ -51,6 +53,7 @@
 	];
 	casks = [
 	  "firefox"
+	  "ghostty"
 	  "zen"
 #	  "sketchybar"
 	];
