@@ -40,7 +40,7 @@
           pkgs.git
 	  pkgs.obsidian
 	  pkgs.ripgrep
-	  pkgs.postgresql
+	  pkgs.pgadmin4-desktopmode
 	];
 
       homebrew = {
