@@ -40,7 +40,6 @@
           pkgs.git
 	  pkgs.obsidian
 	  pkgs.ripgrep
-	  pkgs.pgadmin4-desktopmode
 	];
 
       homebrew = {
@@ -55,6 +54,7 @@
 	  "firefox"
 	  "ghostty"
 	  "zen"
+	  "pgadmin4"
 #	  "sketchybar"
 	];
 	masApps = {
