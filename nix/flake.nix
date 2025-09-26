@@ -40,6 +40,7 @@
           pkgs.git
 	  pkgs.obsidian
 	  pkgs.ripgrep
+	  pkgs.nodejs
 	];
 
       homebrew = {

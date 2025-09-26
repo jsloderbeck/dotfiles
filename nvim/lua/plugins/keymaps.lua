@@ -6,3 +6,9 @@ vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<cr>")
 
 -- Tree
 vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>")
+
+-- markdown preview
+vim.keymap.set("n", "<leader>mp", ":MarkdownPreviewToggle<cr>")
+
+-- nvim-comment
+vim.keymap.set({"n", "v"}, "<leader>/", ":CommentToggle<cr>")

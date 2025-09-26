@@ -22,6 +22,14 @@ require("lazy").setup({
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
       dependencies = { 'nvim-lua/plenary.nvim' }
   },
+
+  -- Preview markdown live in web browser
+ {
+    'terrortylor/nvim-comment',
+    config = function()
+      require("nvim_comment").setup({ create_mappings = false })
+    end
+  },
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -33,6 +41,11 @@ require("lazy").setup({
         require("nvim-tree").setup {}
       end,
   },
+          {
+            "iamcco/markdown-preview.nvim",
+            build = ':call mkdp#util#install()',
+            ft = "markdown",
+        },
   -- Visualize buffers as tabs
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
