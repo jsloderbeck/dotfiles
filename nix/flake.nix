@@ -31,17 +31,23 @@
 
     # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [ pkgs.vscode
-	  pkgs.mkalias
-	  pkgs.bitwarden-desktop
-	  pkgs.neovim
-	  pkgs.spotify
-          pkgs.git
-	  pkgs.obsidian
-	  pkgs.ripgrep
-	  pkgs.nodejs
+    environment.systemPackages = [ 
+        pkgs.vscode
+	    pkgs.mkalias
+	    pkgs.bitwarden-desktop
+	    pkgs.neovim
+	    pkgs.spotify
+        pkgs.git
+	    pkgs.obsidian
+	    pkgs.ripgrep
+	    pkgs.nodejs
+        pkgs.postman
+        pkgs.kitty
 	];
+
+      fonts.packages = [
+        pkgs.nerd-fonts.jetbrains-mono
+      ];
 
       homebrew = {
 	enable = true;
@@ -49,13 +55,13 @@
 #	 "FelixKratz/formulae" 	
 	];
 	brews = [
-	  "mas"
+	    "mas"
 	];
-	casks = [
-	  "firefox"
-	  "ghostty"
-	  "zen"
-	  "pgadmin4"
+    casks = [
+	    "firefox"
+	    "zen"
+	    "pgadmin4"
+        "dropbox"
 #	  "sketchybar"
 	];
 	masApps = {
